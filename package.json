@@ -1,11 +1,21 @@
 {
   "name": "robot",
+  "homepage": "https://AbdulrazakT.github.io/Android-Robot",
   "version": "1.0.0",
-  "description": "",
+  "description": "An interactive android robot made of purely HTML and CSS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Abdul-razak Twaha",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdulrazakT/Android-Robot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AbdulrazakT/Android-Robot/issues"
+  }
 }
