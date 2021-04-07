@@ -1,0 +1,117 @@
+body{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* antennas */
+.top{
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+    align-self: center;
+}
+
+.antenna{
+    background-color: black;
+    height: 50px;
+    width: 10px;
+    margin-bottom: -20px;
+    border-radius: 50px;
+}
+
+/* transformation */
+.antenna.left {
+    transform: rotate(-25deg);
+}
+
+.antenna.right {
+    transform: rotate(25deg);
+}
+
+/* The head */
+.head{
+    display: flex;
+    background-color: black;
+    width: 150px;
+    align-self: center;
+    height: 75px;
+    border-radius: 75px 75px 0 0;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+.eye{
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+/* The middle part */
+.thorax{
+    display: flex;
+}
+
+.stomach{
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    margin: 8px;
+    border-radius: 0 0 25px 25px;
+
+    transition: all 1.5s;
+}
+
+.arm{
+    height: 100px;
+    width: 30px;
+    background-color: black;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/* The legs */
+.abdomen{
+    display: flex;
+    width: 150px;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.leg{
+    width: 30px;
+    height: 75px;
+    background-color: black;
+    border-radius: 0 0 25px 25px;
+    margin-top: -30px;
+}
+
+/* Animations */
+
+.arm.left, .leg.left{
+    transition: all 1s;
+    transform-origin: top center;
+}
+
+.arm.left:hover, .leg.left:hover{ 
+    transform: rotate(25deg);
+}
+
+.arm.right, .leg.right{
+    transition: all 1s;
+    transform-origin: top center;
+}
+
+.arm.right:hover, .leg.right:hover{
+    transform: rotate(-25deg);
+}
+
+.stomach:hover{
+    transform: scale(1.1);
+}
